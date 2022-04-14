@@ -19,7 +19,7 @@ if path.exists('restart.pickle'):
 
 @Client.on_message(filters.command('restart') & filters.user(OWNER) )
 async def restart(client, message,event):
-    restart_message = await client.send_message("Restarting, Please wait!")
+    restart_message = await message.reply(f"Restarting, Please wait!")
     with open('restart.pickle', 'wb') as status:
         pickle.dump([event.chat_id, restart_message.id], status)
     logger.info('Restarting Rashmika')
