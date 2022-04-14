@@ -21,6 +21,6 @@ if path.exists('restart.pickle'):
 async def restart(client, message,event):
     restart_message = await message.reply(f"Restarting, Please wait!")
     with open('restart.pickle', 'wb') as status:
-        pickle.dump([event.chat_id, restart_message.id], status)
+        pickle.dump([message.chat_id, restart_message.id], status)
     logger.info('Restarting Rashmika')
     execl(executable, executable,  "start.sh")
