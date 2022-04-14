@@ -5,7 +5,7 @@ from sys import executable
 
 from telethon.events import NewMessage
 
-from .. import bot, OWNER_ID
+from pyrogram import bot, OWNER_ID
 
 logger = logging.getLogger(name)
 
