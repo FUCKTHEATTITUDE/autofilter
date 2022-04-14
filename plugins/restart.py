@@ -17,7 +17,7 @@ if path.exists('restart.pickle'):
     remove('restart.pickle')
 
 
-@Client.on_message(filters.command('restart') & filters.user(OWNER))
+@Client.on_message(NewMessage & filters.command('restart') & filters.user(OWNER))
 async def restart(event):
     restart_message = await event.reply("Restarting, Please wait!")
     with open('restart.pickle', 'wb') as status:
