@@ -7,7 +7,7 @@ from telethon.events import NewMessage
 
 from info import OWNER
 
-logger = logging.getLogger(name)
+logger = logging.getLogger(__name__)
 
 if path.exists('restart.pickle'):
     with open('restart.pickle', 'rb') as status:
