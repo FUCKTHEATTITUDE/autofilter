@@ -5,7 +5,7 @@ from sys import executable
 from pyrogram import Client
 from telethon.events import NewMessage
 
-from info import OWNER_ID
+from info import OWNER
 
 logger = logging.getLogger(name)
 
@@ -17,7 +17,7 @@ if path.exists('restart.pickle'):
     remove('restart.pickle')
 
 
-@bot.on(NewMessage(pattern='/restart', from_users=OWNER_ID))
+@bot.on(NewMessage(pattern='/restart', from_users=OWNER))
 async def restart(event):
     restart_message = await event.reply("Restarting, Please wait!")
     with open('restart.pickle', 'wb') as status:
