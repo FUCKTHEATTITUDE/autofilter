@@ -2,7 +2,7 @@ import logging
 import pickle
 from os import execl, path, remove
 from sys import executable
-from pyrogram import Client
+from pyrogram import Client , filters
 from telethon.events import NewMessage
 
 from info import OWNER
