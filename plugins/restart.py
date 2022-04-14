@@ -2,10 +2,10 @@ import logging
 import pickle
 from os import execl, path, remove
 from sys import executable
-
+from pyrogram import Client
 from telethon.events import NewMessage
 
-from .. import bot, OWNER_ID
+from .. import OWNER_ID
 
 logger = logging.getLogger(name)
 
