@@ -22,5 +22,5 @@ async def restart(event):
     restart_message = await event.reply("Restarting, Please wait!")
     with open('restart.pickle', 'wb') as status:
         pickle.dump([event.chat_id, restart_message.id], status)
-    logger.info('Restarting deegram')
-    execl(executable, executable, "-m", "deegram")
+    logger.info('Restarting Rashmika')
+    execl(executable, executable, "bash", "start.sh")
