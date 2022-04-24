@@ -2,8 +2,8 @@ from pyrogram import filters
 from pyrogram.errors.exceptions.bad_request_400 import ChatNotModified
 from pyrogram.types import ChatPermissions
 
-from wbb import SUDOERS, app
-from wbb.core.decorators.errors import capture_err
+from plugins import SUDOERS, app
+from plugins.naveen-kangs.core.decorators.errors import capture_err
 from wbb.core.decorators.permissions import adminsOnly
 from wbb.modules.admin import current_chat_permissions, list_admins
 from wbb.utils.functions import get_urls_from_text
