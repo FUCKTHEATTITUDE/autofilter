@@ -3,7 +3,11 @@
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode and Telegram Group Management Bot Written In Python Using Pyrogram.",
     "stack": "container",
     "keywords": [
+      "python3",
       "telegram",
+      "bot",
+      "youtube",
+      "telegram-bot",
       "auto-filter",
       "filter",
       "best",
@@ -15,7 +19,7 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/JOSProjects/IMDb-Movie-Bot",
+    "website": "https://github.com/Naveen-TG/Rashmika",
     "repository": "https://github.com/JOSProjects/IMDb-Movie-Bot",
     "env": {
         "BOT_TOKEN": {
