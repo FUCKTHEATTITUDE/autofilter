@@ -17,6 +17,9 @@ aiofiles
 requests
 pyshorteners
 speedtest-cli
+feedparser
+fuzzysearch
+img2pdf
 bs4
 psutil
 imdbpy
@@ -26,6 +29,7 @@ youtube_search
 youtube-dl
 yt-dlp
 wget
+pytube
 python-arq
 ffmpeg-python
 requests
