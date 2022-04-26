@@ -20,7 +20,7 @@
       "inline"
     ],
     "website": "https://github.com/Naveen-TG/Rashmika",
-    "repository": "https://github.com/JOSProjects/IMDb-Movie-Bot",
+    "repository": "https://github.com/Naveen-TG/Dhanush-TG-Bot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
