@@ -4,9 +4,9 @@ from pyrogram.types import ChatPermissions
 
 from plugins import SUDOERS, app
 from plugins.naveen-kangs.core.decorators.errors import capture_err
-from wbb.core.decorators.permissions import adminsOnly
+from plugins.naveen-kangs.core.decorators.permissions import adminsOnly
 from wbb.modules.admin import current_chat_permissions, list_admins
-from wbb.utils.functions import get_urls_from_text
+from plugins.naveen-kangs.utils.functions import get_urls_from_text
 
 __MODULE__ = "Locks"
 __HELP__ = """
