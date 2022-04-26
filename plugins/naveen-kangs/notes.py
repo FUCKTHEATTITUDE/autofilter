@@ -2,17 +2,17 @@ from re import findall
 
 from pyrogram import filters
 
-from wbb import SUDOERS, USERBOT_ID, USERBOT_PREFIX, app, app2, eor
-from wbb.core.decorators.errors import capture_err
-from wbb.core.decorators.permissions import adminsOnly
-from wbb.core.keyboard import ikb
-from wbb.utils.dbfunctions import (
+from plugins import SUDOERS, USERBOT_ID, USERBOT_PREFIX, app, app2, eor
+from plugins.naveen-kangs.core.decorators.errors import capture_err
+from plugins.naveen-kangs.core.decorators.permissions import adminsOnly
+from plugins.naveen-kangs.core.keyboard import ikb
+from plugins.naveen-kangs.utils.dbfunctions import (
     delete_note,
     get_note,
     get_note_names,
     save_note,
 )
-from wbb.utils.functions import extract_text_and_keyb
+from plugins.naveen-kangs.utils.functions import extract_text_and_keyb
 
 __MODULE__ = "Notes"
 __HELP__ = """/notes To Get All The Notes In The Chat.
