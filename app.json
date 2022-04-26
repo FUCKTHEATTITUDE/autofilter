@@ -1,6 +1,6 @@
 {
-    "name": "IMDb-Movie-Bot",
-    "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
+    "name": "Dhanush-TG-Bot",
+    "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode and Telegram Group Management Bot Written In Python Using Pyrogram.",
     "stack": "container",
     "keywords": [
       "telegram",
