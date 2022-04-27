@@ -38,6 +38,57 @@
             "description": "Username or ID of channel or group. Separate multiple IDs by space.",
             "required": false
         },
+        "SESSION_STRING": {
+            "description": "Need for Userbot Module So u can execute .sh & .l cmd",
+            "required": true
+        },
+        "SUDO_USERS_ID": {
+            "description": "Sudo users have full access to everythin, don't trust anyone... ex:- 123456 654311 123456",
+            "required": true
+        },
+        "LOG_GROUP_ID": {
+            "description": "For logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
+            "required": true
+        },
+        "GBAN_LOG_GROUP_ID": {
+            "description": "gban logs. ex: '-123456'",
+            "required": true
+        },
+        "WELCOME_DELAY_KICK_SEC": {
+            "value": "300",
+            "required": true
+        },
+        "ARQ_API_URL": {
+            "description": "For Music Downloading And Many More Things... Don't change this value",
+            "value": "https://arq.hamker.in",
+            "required": true
+        },
+        "MESSAGE_DUMP_CHAT": {
+            "description": "Chat_id of the group where useless things will go",
+            "required": true
+        },
+        "ARQ_API_KEY": {
+            "description": "Get this from @ARQRobot.",
+            "required": true
+        },
+        "LOG_MENTIONS": {
+            "description": "Fill 1 to turn this on, or 0 to turn it off.",
+            "required": true
+        },
+        "USERBOT_PREFIX": {
+            "description": "Userbot command prefix, Leave it empty if you don't know what that is.",
+            "required": false
+        },
+        "RSS_DELAY": {
+            "description": "Delay in which RSS will send updates in chat",
+            "value": "300",
+            "required": true
+        },
+        "PM_PERMIT":{
+            "description": "Pm permit, fill 1 to enable or 0 to disable it.",
+            "value": "1",
+            "required": true
+        },
         "ADMINS": {
             "description": "Username or ID of Admin. Separate multiple Admins by space.",
             "required": true
