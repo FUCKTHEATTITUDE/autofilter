@@ -1,6 +1,16 @@
 import re
 from os import environ
 
+from dotenv import load_dotenv
+
+load_dotenv("config.env")
+
+HEROKU = bool(
+    environ.get("DYNO")
+)  # NOTE Make it false if you're not deploying on heroku or docker.
+
+if HEROKU:
+
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):
     if value.lower() in ["true", "yes", "1", "enable", "y"]:
@@ -37,6 +47,19 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Dingdi")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
+SESSION_STRING = environ.get("SESSION_STRING", None)
+USERBOT_PREFIX = environ.get("USERBOT_PREFIX", ".")
+SUDO_USERS_ID = [int(x) for x in environ.get("SUDO_USERS_ID", "").split()]
+LOG_GROUP_ID = int(environ.get("LOG_GROUP_ID", None))
+GBAN_LOG_GROUP_ID = int(environ.get("GBAN_LOG_GROUP_ID", None))
+MESSAGE_DUMP_CHAT = int(environ.get("MESSAGE_DUMP_CHAT", None))
+WELCOME_DELAY_KICK_SEC = int(environ.get("WELCOME_DELAY_KICK_SEC", None))
+MONGO_URL = environ.get("MONGO_URL", None)
+ARQ_API_URL = environ.get("ARQ_API_URL", None)
+ARQ_API_KEY = environ.get("ARQ_API_KEY", None)
+LOG_MENTIONS = bool(int(environ.get("LOG_MENTIONS", None)))
+RSS_DELAY = int(environ.get("RSS_DELAY", None))
+PM_PERMIT = bool(int(environ.get("PM_PERMIT", None)))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'mizotelegram')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
