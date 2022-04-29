@@ -8,6 +8,7 @@ telegraph==1.4.1
 googletrans==3.1.0a0
 gTTS
 config
+pyromod
 uvloop
 search-engine-parser
 pykeyboard
